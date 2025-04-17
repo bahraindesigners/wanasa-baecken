@@ -13,7 +13,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 
 class SendReminders implements ShouldQueue
 {
-    use Queueable;
+    use Queueable , Dispatchable , SerializesModels , InteractsWithQueue;
 
     /**
      * Create a new job instance.

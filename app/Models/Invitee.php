@@ -27,7 +27,9 @@ class Invitee extends Model implements HasMedia
         'name',
         'phone',
         'status',
+        'attended_at',
         'qr_token',
+        'reminder_status'
     ];
 
     protected $casts = [

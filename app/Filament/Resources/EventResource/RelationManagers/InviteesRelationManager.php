@@ -35,6 +35,10 @@ class InviteesRelationManager extends RelationManager
                     ->label(__("Notification status"))
                     ->badge()
                     ->searchable(),
+                    Tables\Columns\TextColumn::make('reminder_status')
+                    ->label(__("Reminder status"))
+                    ->badge()
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('attended_at')
                     ->label(__("Attended at"))
                     ->badge()
